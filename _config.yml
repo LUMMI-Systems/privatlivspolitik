@@ -1,0 +1,16 @@
+title: Privatlivspolitik for LUMMI-appen
+description: Sådan behandler LUMMI-appen personoplysninger.
+lang: da
+company: LUMMI Systems ApS
+homepage: https://lummi.dk
+repo_url: https://github.com/LUMMI-Systems/privatlivspolitik
+markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.company }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="{{ '/' | relative_url }}">{{ site.company }}</a>
+        <nav>
+            <a href="{{ '/' | relative_url }}">Privatlivspolitik</a>
+            <a href="{{ '/versionshistorik' | relative_url }}">Versionshistorik</a>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer class="site-footer">
+        <p>
+            <a href="{{ site.homepage }}">{{ site.homepage | remove: 'https://' }}</a> ·
+            <a href="{{ site.repo_url }}/commits/main/index.md">Alle tidligere versioner (Git-historik)</a>
+        </p>
+    </footer>
+</body>
+</html>
