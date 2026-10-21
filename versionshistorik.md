@@ -14,3 +14,4 @@ Klik på et commit i historikken for at se ændringerne linje for linje, eller v
 | Version | Gældende fra | Ændringer |
 |---|---|---|
 | 1.0 | 21-10-2026 | Første udgave af privatlivspolitikken for LUMMI-appen. |
+| 1.1 | 21-10-2026 | Lokation: påmindelse ved ankomst med telefonens geofencing. Nyt: mikrofon og mødeoptagelse med AI-referat samt øvrige AI-funktioner (OpenAI og Anthropic). Push-notifikationer sendes nu gennem OneSignal. |

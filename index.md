@@ -7,7 +7,7 @@ title: Privatlivspolitik for LUMMI-appen
 Denne privatlivspolitik forklarer, hvordan personoplysninger behandles, når du bruger LUMMI-appen til iOS og Android. Politikken supplerer LUMMIs generelle [persondatapolitik](https://lummi.dk/privacy-policy), som gælder for hjemmesiden, salg, support og kundeforhold.
 
 <div class="meta" markdown="1">
-**Version** 1.0<br>
+**Version** 1.1<br>
 **Gældende fra** 21-10-2026<br>
 **Senest opdateret** 21-10-2026<br>
 Tidligere versioner kan ses under [Versionshistorik](versionshistorik).
@@ -54,10 +54,11 @@ Hvilke oplysninger der behandles, afhænger af de funktioner, virksomheden har s
 | Konto og login | Navn, e-mailadresse, telefonnummer, bruger-id, rolle, adgangsrettigheder, virksomhedens LUMMI-miljø og loginhistorik. |
 | Opgaver og planlægning | Tildelte opgaver, kunde, adresse og lokation for opgaven, tidsrum, opgavetype og noter. |
 | Tidsregistrering | Tidspunkt for check ind og check ud, registrerede timer, fravær og status for godkendelse. |
-| Lokation (GPS) | Enhedens placering i forbindelse med check ind og check ud på en opgave, hvis du har givet tilladelse. Se punkt 3. |
+| Lokation (GPS) | Enhedens placering i forbindelse med check ind og check ud på en opgave, hvis du har givet tilladelse. Hvis du har slået påmindelse ved ankomst til, bruger telefonen også placeringen til at minde dig om at checke ind, men den placering forlader ikke telefonen. Se punkt 3. |
 | Fotos og filer | Billeder og filer, du tager eller vælger i appen, fx ved kvalitetskontrol, afvigelser, klager eller dokumentation af udført arbejde, samt tilhørende kommentarer. |
+| Lydoptagelser og mødereferater | Lydoptagelser af møder, som du selv starter i appen, og den transskription og det referat, der laves ud fra optagelsen. Kun hvis virksomheden har slået mødeoptagelse til. |
 | Beskeder | Opslag, beskeder, kvitteringer for læst og svar på henvendelser. |
-| Push-notifikationer | Push-token, enhedstype og dine valg for notifikationer. |
+| Push-notifikationer | OneSignal subscription-id, enhedstype, sprog, app-version, tidszone, dine valg for notifikationer samt hvornår appen åbnes, og om du klikker på en notifikation. |
 | Tekniske oplysninger | IP-adresse, enhedsmodel, styresystem, app-version, sprog, tidsstempler, sikkerhedslog og fejlrapporter. |
 
 Appen indeholder ikke reklamer, og oplysninger fra appen bruges ikke til at spore dig på tværs af andre virksomheders apps eller hjemmesider. Vi sælger ikke personoplysninger.
@@ -70,15 +71,21 @@ Appen beder kun om adgang til funktioner på din enhed, når du bruger en funkti
 
 ### Lokation (GPS)
 
-Appen bruger din placering, når du checker ind og ud på en opgave, så virksomheden kan dokumentere, at arbejdet er udført på den rigtige adresse. Placeringen kan også bruges til at vise dagens opgaver på et kort. Placeringen registreres kun, mens appen er i brug. Appen sporer ikke din placering løbende eller i baggrunden.
+Appen bruger din placering, når du checker ind og ud på en opgave, så virksomheden kan dokumentere, at arbejdet er udført på den rigtige adresse. Placeringen kan også bruges til at vise dagens opgaver på et kort. Placeringen sendes kun til platformen, når du selv checker ind på en opgave. Appen registrerer ikke din placering løbende, og den sendes ikke i baggrunden.
+
+**Påmindelse ved ankomst.** Hvis du giver appen adgang til din placering hele tiden ("Altid" på iPhone, "Tillad hele tiden" på Android), kan appen minde dig om at checke ind, når du ankommer til adressen på en opgave, der er i gang. Til det bruger appen telefonens egen geofencing (regionsovervågning), som også virker, når appen er lukket. Telefonen holder kun øje med adresserne på dine kommende opgaver, højst 20 steder på iPhone og 90 på Android. Placeringen forlader aldrig telefonen: den gemmes ikke og sendes hverken til virksomheden, LUMMI eller andre. Appen viser kun en notifikation på telefonen, og kun inden for opgavens tidsrum. Tilladelsen er frivillig, og resten af appen, herunder check ind og check ud, virker også, hvis du kun giver adgang, mens appen er i brug.
 
 ### Kamera og fotos
 
 Appen bruger kameraet og dit fotobibliotek, når du selv vælger at tage eller vedhæfte et billede, fx til kvalitetskontrol, afvigelser eller dokumentation. Appen får kun adgang til de billeder, du aktivt vælger, og læser ikke dit fotobibliotek i øvrigt.
 
+### Mikrofon
+
+Hvis virksomheden har slået mødeoptagelse til, kan du optage et møde i appen og få skrevet et referat med AI. Appen bruger kun mikrofonen, når du selv starter en optagelse, og optager, indtil du stopper den, også når skærmen er låst, eller appen ligger i baggrunden. Du skal sikre, at alle deltagere ved, at mødet bliver optaget. Optagelsen sendes til platformen, hvor den bliver omdannet til tekst, og der skrives et referat. Se punkt 5 og 7.
+
 ### Push-notifikationer
 
-Appen kan sende notifikationer om fx nye eller ændrede opgaver, beskeder og opslag. For at kunne sende notifikationer gemmes et push-token for din enhed. Notifikationer leveres gennem Apple Push Notification service (iOS) eller Firebase Cloud Messaging fra Google (Android). Du kan slå notifikationer fra i telefonens indstillinger.
+Appen kan sende notifikationer om fx nye eller ændrede opgaver, beskeder og opslag. Notifikationer sendes gennem tjenesten OneSignal, som leverer dem videre via Apple Push Notification service (iOS) eller Firebase Cloud Messaging fra Google (Android). For at kunne sende notifikationer registreres din enhed hos OneSignal med et subscription-id, som gemmes sammen med din bruger. OneSignal registrerer desuden enhedstype, sprog, app-version og tidszone, samt hvornår appen åbnes, og om du klikker på en notifikation. Du kan slå notifikationer fra i telefonens indstillinger.
 
 ## 4. Formål og retsgrundlag {#punkt-4}
 
@@ -90,6 +97,7 @@ Når virksomheden er dataansvarlig, fastlægger virksomheden formål og retsgrun
 | Registrere arbejdstid, fravær og grundlag for løn | Opfyldelse af ansættelsesaftalen, litra b, og retlige forpligtelser, fx regler om registrering af arbejdstid og bogføring, litra c. |
 | Dokumentere fremmøde og udført arbejde ved hjælp af lokation og fotos | Virksomhedens legitime interesse i at dokumentere over for sine kunder, at opgaver er udført korrekt og til tiden, litra f. |
 | Kvalitetssikring, afvigelser og klager | Virksomhedens legitime interesse i at levere og forbedre ydelser til sine kunder, litra f. |
+| Optage møder og udarbejde referater med AI | Virksomhedens legitime interesse i at dokumentere møder og de beslutninger, der træffes, litra f. |
 | Sende notifikationer | Opfyldelse af aftale, litra b, og legitim interesse i hurtig kommunikation om arbejdet, litra f. |
 | Drift, sikkerhed og fejlretning af appen (LUMMI som dataansvarlig) | LUMMIs legitime interesse i en stabil og sikker tjeneste, litra f. |
 
@@ -102,7 +110,8 @@ Oplysninger fra appen kan være tilgængelige for:
 - administratorer og andre brugere hos virksomheden, i det omfang deres rolle giver adgang
 - LUMMI som databehandler, når det er nødvendigt for drift, support og fejlretning
 - leverandører af hosting, drift, backup og sikkerhed. Hver virksomhed har sin egen database, som er hostet i Danmark
-- Apple og Google, når der sendes push-notifikationer
+- OneSignal, Inc. (USA), som leverer push-notifikationer videre gennem Apple og Google
+- AI-udbydere, når virksomheden har slået AI-funktioner til: OpenAI, som omdanner lydoptagelser af møder til tekst, og Anthropic, som skriver mødereferater og står bag AI-assistenten og de øvrige AI-funktioner, fx forslag, opsummeringer, gennemgang af fotos og indlæsning af fakturaer. OpenAI og Anthropic er underdatabehandlere og modtager kun de oplysninger, den enkelte funktion skal bruge. Efter deres vilkår for API-kunder bruges oplysningerne som udgangspunkt ikke til at træne deres AI-modeller. Hvis virksomheden har valgt at bruge sin egen konto hos en AI-udbyder, sendes oplysningerne i stedet til den udbyder
 - leverandører af SMS og e-mail, når virksomheden sender beskeder gennem platformen
 - systemer, som virksomheden selv har valgt at forbinde til platformen, fx løn-, regnskabs- eller kalendersystemer
 - offentlige myndigheder, når der er en retlig forpligtelse.
@@ -111,7 +120,7 @@ Leverandører, der behandler oplysninger på LUMMIs vegne, er underlagt skriftli
 
 ## 6. Overførsel uden for EU og EØS {#punkt-6}
 
-Data i platformen opbevares i Danmark. Push-notifikationer leveres gennem Apple og Google, som kan behandle push-token og notifikationens indhold uden for EU og EØS, herunder i USA. Overførslen sker på grundlag af EU-Kommissionens tilstrækkelighedsafgørelse for EU-U.S. Data Privacy Framework eller EU-Kommissionens standardkontraktbestemmelser.
+Data i platformen opbevares i Danmark. Push-notifikationer leveres gennem OneSignal, Inc. og videre gennem Apple og Google, som kan behandle subscription-id, enhedsoplysninger og notifikationens indhold uden for EU og EØS, herunder i USA. Når mødeoptagelse eller andre AI-funktioner er slået til, behandles lydoptagelser og de oplysninger, funktionen skal bruge, hos OpenAI og Anthropic i USA. Overførslerne sker på grundlag af EU-Kommissionens tilstrækkelighedsafgørelse for EU-U.S. Data Privacy Framework eller EU-Kommissionens standardkontraktbestemmelser.
 
 ## 7. Hvor længe oplysningerne opbevares {#punkt-7}
 
@@ -120,7 +129,9 @@ Virksomheden bestemmer, hvor længe oplysningerne i platformen opbevares. LUMMI 
 | Oplysninger | Opbevaring |
 |---|---|
 | Opgaver, timer, lokation, fotos og beskeder | Efter virksomhedens retningslinjer og så længe virksomheden har et sagligt eller lovpligtigt behov. |
-| Push-token | Indtil du logger ud, afinstallerer appen, eller tokenet ikke længere er gyldigt. |
+| Lydoptagelser af møder | Slettes automatisk efter den periode, virksomheden har valgt, som udgangspunkt 30 dage og højst 365 dage. Transskription og referat bevares. |
+| Transskriptioner og mødereferater | Efter virksomhedens retningslinjer. |
+| OneSignal subscription-id | Indtil du logger ud, vælger "Skift virksomhed", afinstallerer appen, eller id'et ikke længere er gyldigt. |
 | Data gemt lokalt på enheden | Indtil du logger ud eller afinstallerer appen. |
 | Sikkerhedslog og fejlrapporter | I en periode fastsat efter formål og risiko. Perioden begrænses og revurderes løbende. |
 | Sikkerhedskopier | Slettes gennem den kontrollerede overskrivningscyklus og er indtil da beskyttet mod almindelig brug. |
